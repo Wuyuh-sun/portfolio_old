@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import DecoImg from "../../public/img/1x/decoImg1.png";
 import BoatImg from "../../public/img/boat-unscreen.gif";
+
 import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import style from "../../styles/jumbotron.module.css";
@@ -14,7 +15,6 @@ export default function jumbotron() {
   const ImgRef = useRef();
   useEffect(() => {
     if (splashLoadingState === 0) {
-      
     }
   }, [splashLoadingState]);
   return (
@@ -22,10 +22,19 @@ export default function jumbotron() {
       <div ref={wrapRef} className={style.wrap}>
         <Image src={DecoImg} width={500} height={500} />
         <div ref={ImgRef} className={style.boatWrap}>
+          {/* 배1 */}
           <Image src={BoatImg} width={500} height={500} />
+          {/* 배2 */}
           <Image src={BoatImg} width={500} height={500} />
         </div>
+        <header className={style.Header}>
+          <h2>반갑습니다!</h2>
+          <h1>웹 개발자 우윤하입니다.</h1>
+          <h4>WEB FE/BE Developer</h4>
+        </header>
+        <div className={style.downWheel}/>
       </div>
+      {/* 물결효과 */}
       <div className={style.custom_shape_divider_top_1664111356}>
         <svg
           data-name="Layer 1"

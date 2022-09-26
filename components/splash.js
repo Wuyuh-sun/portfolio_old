@@ -18,6 +18,7 @@ export default function splash() {
       setTimeout(()=>{
         wrapRef.current.style.display = "none";
         document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
       },1000)
     }
     setTimeout(() => {
