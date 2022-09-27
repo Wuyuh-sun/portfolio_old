@@ -99,18 +99,28 @@
   text-shadow: 3px 3px 0 black
 }
 
-.Header h2 {
+.Header_wrap h2 {
   font-size: 3vw;
+  overflow: hidden;
+  line-height: 0%;
+  transition: 0.8s;
 }
 
-.Header h1 {
+.Header_wrap h1 {
   font-size: 4vw;
   color: aliceblue;
+  overflow: hidden;
+  line-height: 0%;
+  transition: 0.8s;
+  margin: 2vw;
 }
 
-.Header h4 {
+.Header_wrap h4 {
   font-weight: 100;
   font-size: 1.5vw;
+  overflow: hidden;
+  line-height: 0%;
+  transition: 0.8s;
 }
 
 .downWheel {
@@ -151,6 +161,7 @@
   overflow: hidden;
   line-height: 0;
   z-index: 5;
+  background-color: aliceblue;
 }
 
 .custom_shape_divider_top_1664111356 svg {

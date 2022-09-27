@@ -13,8 +13,20 @@ export default function jumbotron() {
 
   const wrapRef = useRef();
   const ImgRef = useRef();
+  const h2Ref = useRef();
+  const h1Ref = useRef();
+  const h4Ref = useRef();
   useEffect(() => {
     if (splashLoadingState === 0) {
+      setTimeout(() => {
+        h2Ref.current.style.lineHeight = "120%";
+      }, 500);
+      setTimeout(() => {
+        h1Ref.current.style.lineHeight = "150%";
+      }, 1500);
+      setTimeout(() => {
+        h4Ref.current.style.lineHeight = "150%";
+      }, 2500);
     }
   }, [splashLoadingState]);
   return (
@@ -28,11 +40,13 @@ export default function jumbotron() {
           <Image src={BoatImg} width={500} height={500} />
         </div>
         <header className={style.Header}>
-          <h2>반갑습니다!</h2>
-          <h1>웹 개발자 우윤하입니다.</h1>
-          <h4>WEB FE/BE Developer</h4>
+          <div className={style.Header_wrap}>
+            <h2 ref={h2Ref}>반갑습니다!</h2>
+            <h1 ref={h1Ref}>웹 개발자 우윤하입니다.</h1>
+            <h4 ref={h4Ref}>WEB FE/BE Developer</h4>
+          </div>
         </header>
-        <div className={style.downWheel}/>
+        <div className={style.downWheel} />
       </div>
       {/* 물결효과 */}
       <div className={style.custom_shape_divider_top_1664111356}>
