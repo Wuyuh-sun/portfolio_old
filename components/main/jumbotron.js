@@ -16,16 +16,20 @@ export default function jumbotron() {
   const h2Ref = useRef();
   const h1Ref = useRef();
   const h4Ref = useRef();
+
   useEffect(() => {
     if (splashLoadingState === 0) {
       setTimeout(() => {
-        h2Ref.current.style.lineHeight = "120%";
+        h2Ref.current.style.top = "0";
+        h2Ref.current.style.opacity = "1";
       }, 500);
       setTimeout(() => {
-        h1Ref.current.style.lineHeight = "150%";
+        h1Ref.current.style.top = "0";
+        h1Ref.current.style.opacity = "1";
       }, 1500);
       setTimeout(() => {
-        h4Ref.current.style.lineHeight = "150%";
+        h4Ref.current.style.top = "0";
+        h4Ref.current.style.opacity = "1";
       }, 2500);
     }
   }, [splashLoadingState]);
@@ -42,7 +46,7 @@ export default function jumbotron() {
         <header className={style.Header}>
           <div className={style.Header_wrap}>
             <h2 ref={h2Ref}>반갑습니다!</h2>
-            <h1 ref={h1Ref}>웹 개발자 우윤하입니다.</h1>
+            <h1 ref={h1Ref}>웹 개발자 우윤하입니다 :)</h1>
             <h4 ref={h4Ref}>WEB FE/BE Developer</h4>
           </div>
         </header>

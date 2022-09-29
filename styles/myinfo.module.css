@@ -3,5 +3,9 @@
   height: 800px;
   background-color: antiquewhite;
   box-sizing: border-box;
-  padding: 50px 0 50px 0;
+  padding: 50px 15px 50px 15px;
+}
+
+.profile_ImgWrap span{
+  float: left;
 }

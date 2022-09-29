@@ -101,26 +101,28 @@
 
 .Header_wrap h2 {
   font-size: 3vw;
-  overflow: hidden;
-  line-height: 0%;
-  transition: 0.8s;
+  transition: 0.8s ease-in-out;
+  position: relative;
+  top:40px;
+  opacity: 0;
 }
 
 .Header_wrap h1 {
   font-size: 4vw;
   color: aliceblue;
-  overflow: hidden;
-  line-height: 0%;
-  transition: 0.8s;
-  margin: 2vw;
+  transition: 0.8s ease-in-out;
+  position: relative;
+  top:40px;
+  opacity: 0;
 }
 
 .Header_wrap h4 {
   font-weight: 100;
   font-size: 1.5vw;
-  overflow: hidden;
-  line-height: 0%;
-  transition: 0.8s;
+  transition: 0.8s ease-in-out;
+  position: relative;
+  top:40px;
+  opacity: 0;
 }
 
 .downWheel {

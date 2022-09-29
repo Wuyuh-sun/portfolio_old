@@ -1,0 +1,12 @@
+.wrap{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap_center{
+  width: 1200px;
+  height: 100%;
+  background-color: aquamarine;
+}

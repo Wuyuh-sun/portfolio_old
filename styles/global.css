@@ -70,9 +70,14 @@ body {
 ::-webkit-scrollbar-thumb {
   height: 20%;
   /* 스크롤바의 길이 */
-  background: var(--blue4);
+  background: var(--blue6);
   /* 스크롤바의 색상 */
   border-radius: 0;
+  transition: 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue4);
 }
 
 #__next {
