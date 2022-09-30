@@ -5,9 +5,9 @@ import style from "../../styles/nav.module.css";
 export default function nav() {
   return (
     <>
-      <div className={style.wrap}>
+      <nav className={style.wrap}>
         <Image src={logoImg} width={50} height={50} />
-      </div>
+      </nav>
     </>
   );
 }

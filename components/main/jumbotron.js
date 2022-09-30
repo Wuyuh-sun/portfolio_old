@@ -35,7 +35,7 @@ export default function jumbotron() {
   }, [splashLoadingState]);
   return (
     <>
-      <div ref={wrapRef} className={style.wrap}>
+      <header ref={wrapRef} className={style.wrap}>
         <Image src={DecoImg} width={500} height={500} />
         <div ref={ImgRef} className={style.boatWrap}>
           {/* 배1 */}
@@ -51,7 +51,7 @@ export default function jumbotron() {
           </div>
         </header>
         <div className={style.downWheel} />
-      </div>
+      </header>
       {/* 물결효과 */}
       <div className={style.custom_shape_divider_top_1664111356}>
         <svg
