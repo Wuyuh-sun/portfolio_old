@@ -8,12 +8,16 @@ import style from "../styles/mainPage.module.css";
 export default function mainPage() {
   return (
     <>
-      <Nav />
+      {/* header semantic */}
       <Jumbotron />
+      {/* nav semantic */}
+      <Nav />
+      {/* main semantic */}
       <div className={style.wrap}>
         <Myinfo />
         <About />
       </div>
+      {/* footer semantic */}
       <Footer />
     </>
   );

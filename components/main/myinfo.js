@@ -1,16 +1,19 @@
 import style from "../../styles/myinfo.module.css";
 import Image from "next/image";
-import splashImg from "../../public/img/sample.png";
+import LinkImg from "../../public/img/1x/Link.png";
 
 export default function myinfo() {
   return (
     <>
       <div className={style.wrap}>
-        <div className={style.profile_ImgWrap}>
-          <Image src={splashImg} width={400} height={400} />
-        </div>
         <section>
-          
+          <div className={style.title_wrap}>
+            <Image src={LinkImg} width={50} height={50} />
+            <h1>About Me</h1>
+          </div>
+          <div className={style.content_wrap}>
+            
+          </div>
         </section>
       </div>
     </>

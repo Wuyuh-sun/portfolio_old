@@ -5,6 +5,8 @@
   height: 100px;
   display: flex;
   align-items: center;
+  top: 0;
+  left: 0;
 }
 
 .wrap span{
