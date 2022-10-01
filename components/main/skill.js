@@ -1,17 +1,10 @@
-import style from "../../styles/about.module.css";
+import style from "../../styles/skill.module.css";
 import Image from "next/image";
 import LinkImg from "../../public/img/1x/Link.png";
-import { useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { aboutWrap } from "../../store/modules/aboutSlice";
+import { useRef } from "react";
 
-export default function about() {
+export default function skill() {
   const wrap = useRef();
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(aboutWrap(wrap.current));
-  },[])
-  
   return (
     <>
       <div className={style.wrap} ref={wrap}>

@@ -6,10 +6,10 @@ import BoatImg from "../../public/img/boat-unscreen.gif";
 import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import style from "../../styles/jumbotron.module.css";
-import { useState } from "react";
 
 export default function jumbotron() {
   const splashLoadingState = useSelector((state) => state.splash.value);
+  const aboutWrapState = useSelector((state)=>state.about.value);
 
   const wrapRef = useRef();
   const ImgRef = useRef();
@@ -33,6 +33,11 @@ export default function jumbotron() {
       }, 2500);
     }
   }, [splashLoadingState]);
+
+  function downWheelClick(){
+    aboutWrapState.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   return (
     <>
       <header ref={wrapRef} className={style.wrap}>
@@ -50,7 +55,7 @@ export default function jumbotron() {
             <h4 ref={h4Ref}>WEB FE/BE Developer</h4>
           </div>
         </header>
-        <div className={style.downWheel} />
+        <div className={style.downWheel}  onClick={downWheelClick}/>
       </header>
       {/* 물결효과 */}
       <div className={style.custom_shape_divider_top_1664111356}>

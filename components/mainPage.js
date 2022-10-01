@@ -1,8 +1,10 @@
 import Nav from "./main/nav";
 import Jumbotron from "./main/jumbotron";
 import Myinfo from "./main/myinfo";
-import Footer from "./main/footer";
+
 import About from "./main/about";
+import Skill from "./main/skill";
+import PortFolios from "./main/portfolios";
 import style from "../styles/mainPage.module.css";
 
 export default function mainPage() {
@@ -14,11 +16,12 @@ export default function mainPage() {
       <Nav />
       {/* main semantic */}
       <div className={style.wrap}>
-        <Myinfo />
         <About />
+        <Myinfo />
+        <Skill/>
+        <PortFolios/>
       </div>
-      {/* footer semantic */}
-      <Footer />
+      
     </>
   );
 }
