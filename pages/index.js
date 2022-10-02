@@ -1,6 +1,6 @@
-import Splash from "../components/Splash";
-import MainPage from "../components/MainPage";
-import Footer from "../components/Footer";
+import Splash from "../components/Splash.js";
+import MainPage from "../components/MainPage.js";
+import Footer from "../components/Footer.js";
 import { useRef,useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
