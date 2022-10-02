@@ -5,12 +5,12 @@ import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { aboutWrap } from "../../store/modules/aboutSlice";
 
-export default function about() {
+export default function About() {
   const wrap = useRef();
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(aboutWrap(wrap.current));
-  },[])
+  },[dispatch])
   
   return (
     <>
@@ -20,7 +20,7 @@ export default function about() {
             <div className={style.title_wrapBox} onClick={()=>{
               wrap.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
             }}>
-              <Image src={LinkImg} width={50} height={50} />
+              <Image src={LinkImg} width={50} height={50} alt="linkImg"/>
               <h1>About Me</h1>
             </div>
           </div>

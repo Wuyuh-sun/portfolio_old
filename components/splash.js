@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useRef } from "react";
 import { splashOn, splashOff } from "../store/modules/splashSlice";
 
-export default function splash() {
+export default function Splash() {
   const splashLoadingState = useSelector((state) => state.splash.value);
   const dispatch = useDispatch();
   const wrapRef = useRef();
@@ -24,14 +24,14 @@ export default function splash() {
     setTimeout(() => {
       dispatch(splashOff());
     }, 3000);
-  }, [splashLoadingState]);
+  }, [splashLoadingState, dispatch]);
 
   return (
     <>
       <div ref={wrapRef} className={style.wrap}>
-        <Image src={loadingOrca} width={400} height={300} />
+        <Image src={loadingOrca} width={400} height={300} alt="loadingOrca"/>
         <div className={style.loadingText}>
-          <h1>WUYUH's WEB PORTFOLIO</h1>
+          <h1>WUYUH&#39;s WEB PORTFOLIO</h1>
           <h4>WEB FullStack Developer</h4>
         </div>
       </div>

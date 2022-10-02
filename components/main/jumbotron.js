@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import style from "../../styles/jumbotron.module.css";
 
-export default function jumbotron() {
+export default function Jumbotron() {
   const splashLoadingState = useSelector((state) => state.splash.value);
   const aboutWrapState = useSelector((state)=>state.about.value);
 
@@ -41,12 +41,12 @@ export default function jumbotron() {
   return (
     <>
       <header ref={wrapRef} className={style.wrap}>
-        <Image src={DecoImg} width={500} height={500} />
+        <Image src={DecoImg} width={500} height={500} alt="DecoImg"/>
         <div ref={ImgRef} className={style.boatWrap}>
           {/* 배1 */}
-          <Image src={BoatImg} width={500} height={500} />
+          <Image src={BoatImg} width={500} height={500} alt="BoatImg"/>
           {/* 배2 */}
-          <Image src={BoatImg} width={500} height={500} />
+          <Image src={BoatImg} width={500} height={500} alt="BoatImg"/>
         </div>
         <header className={style.Header}>
           <div className={style.Header_wrap}>

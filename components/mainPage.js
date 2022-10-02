@@ -1,13 +1,13 @@
-import Nav from "./main/nav";
-import Jumbotron from "./main/jumbotron";
-import Myinfo from "./main/myinfo";
+import Nav from "./main/Nav";
+import Jumbotron from "./main/Jumbotron";
+import Myinfo from "./main/Myinfo";
 
-import About from "./main/about";
-import Skill from "./main/skill";
+import About from "./main/About";
+import Skill from "./main/Skill";
 import PortFolios from "./main/portfolios";
 import style from "../styles/mainPage.module.css";
 
-export default function mainPage() {
+export default function MainPage() {
   return (
     <>
       {/* header semantic */}

@@ -1,7 +1,8 @@
-import Splash from "../components/splash";
-import MainPage from "../components/mainPage";
-import Footer from "../components/footer";
-import { useEffect, useState } from "react";
+import Splash from "../components/Splash";
+import MainPage from "../components/MainPage";
+import Footer from "../components/Footer";
+import { useRef,useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Home() {
   useEffect(() => {

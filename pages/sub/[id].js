@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router';
 
-export default function subID() {
+export default function SubID() {
   const router = useRouter();
 
   return(

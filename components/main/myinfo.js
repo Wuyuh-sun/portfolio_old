@@ -3,7 +3,7 @@ import Image from "next/image";
 import LinkImg from "../../public/img/1x/Link.png";
 import { useRef } from "react";
 
-export default function myinfo() {
+export default function Myinfo() {
   const wrap = useRef();
 
   return (
@@ -14,7 +14,7 @@ export default function myinfo() {
             <div className={style.title_wrapBox} onClick={()=>{
               wrap.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
             }}>
-              <Image src={LinkImg} width={50} height={50} />
+              <Image src={LinkImg} width={50} height={50} alt="LinkImg"/>
               <h1>About Me</h1>
             </div>
           </div>
