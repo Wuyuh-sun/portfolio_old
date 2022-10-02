@@ -1,6 +1,12 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-  
-  res.status(200).json({ name: req.query.id })
+  const id = req.query.id[0];
+  const name = req.query.id[1];
+  const pw = req.query.id[2];
+
+  res.status(200).json({
+    id,
+    name,
+    pw,
+  });
 }
