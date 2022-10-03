@@ -4,7 +4,6 @@ import Footer from "../components/Footer.js";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-
   useEffect(() => {
     // fetch("/api/" + "hi1" + "/" + "hi2" + "/" + "hi3")
     //   .then((res) => {
