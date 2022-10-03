@@ -4,6 +4,8 @@ export default function handler(req, res) {
   const name = req.query.id[1];
   const pw = req.query.id[2];
 
+  console.log(req.query);
+
   res.status(200).json({
     id,
     name,
